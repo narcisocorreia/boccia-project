@@ -106,7 +106,7 @@ export class LoginFormComponent implements OnInit {
         if (!user.emailVerified) {
           this.router.navigate(['/emailVerificationRoute']);
         } else {
-          this.router.navigate(['/kabanRoute']);
+          this.router.navigate(['/kabanListRoute']);
         }
       });
   }

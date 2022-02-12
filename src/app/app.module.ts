@@ -12,21 +12,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { KabanComponent } from './pages/kaban/kaban.component';
+import { KabanComponent } from './routes/kaban/kaban.component';
 import { TaskContainerComponent } from './components/task-container/task-container.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
-import { LoginComponent } from './pages/login/login.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { LoginComponent } from './routes/login/login.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideAuth, getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
-import { EmailVerificationComponent } from './pages/email-verification/email-verification.component';
+import { EmailVerificationComponent } from './routes/email-verification/email-verification.component';
+
+import { KabanListComponent } from './routes/kaban-list/kaban-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KabanComponent,
+    KabanListComponent,
     TaskContainerComponent,
     NavbarComponent,
     LoginFormComponent,
