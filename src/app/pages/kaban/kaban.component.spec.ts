@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainViewComponent } from './main-view.component';
+import { KabanComponent } from './kaban.component';
 
 describe('MainViewComponent', () => {
-  let component: MainViewComponent;
-  let fixture: ComponentFixture<MainViewComponent>;
+  let component: KabanComponent;
+  let fixture: ComponentFixture<KabanComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainViewComponent ]
-    })
-    .compileComponents();
+      declarations: [KabanComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainViewComponent);
+    fixture = TestBed.createComponent(KabanComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

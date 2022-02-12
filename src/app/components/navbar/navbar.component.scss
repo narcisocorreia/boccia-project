@@ -4,7 +4,8 @@
   height: 5rem;
 
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+
   padding: 1rem;
 
   .logo {
@@ -17,7 +18,10 @@
     color: white;
     font-family: "Quicksand";
     font-size: 2rem;
-    text-align: center;
+  }
+
+  .logoutButton {
+    margin-left: auto;
   }
 }
 
@@ -27,7 +31,6 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
-
 
 @keyframes shake {
   10%,

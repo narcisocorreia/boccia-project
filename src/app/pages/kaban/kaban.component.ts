@@ -6,11 +6,11 @@ import {
 } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-main-view',
-  templateUrl: './main-view.component.html',
-  styleUrls: ['./main-view.component.scss'],
+  selector: 'app-kaban',
+  templateUrl: './kaban.component.html',
+  styleUrls: ['./kaban.component.scss'],
 })
-export class MainViewComponent implements OnInit {
+export class KabanComponent implements OnInit {
   ideas: string[] = ['Go home', 'Fall asleep'];
   todo: string[] = ['Get to work', 'Pick up groceries'];
   done: string[] = [

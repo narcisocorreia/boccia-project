@@ -1,9 +1,14 @@
 <div class="navbar">
   <img class="logo" src="assets/svg/logo.svg">
+  <div class="title">
+    <h1>Supreme Kaban</h1>
+  </div>
 
-  <h1 class="title">Supreme Kaban</h1>
+  <ng-container *ngIf="currentUser">
+    <button mat-button class="logoutButton" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      logout
+    </button>
+  </ng-container>
 
-  <button mat-icon-button aria-label>
-    <mat-icon class="login-button">person_pin</mat-icon>
-  </button>
 </div>
