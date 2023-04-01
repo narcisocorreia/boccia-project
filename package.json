@@ -27,6 +27,7 @@
     "@ngneat/overview": "^3.0.0",
     "bulma": "^0.9.3",
     "firebase": "^9.4.0",
+    "material-icons": "^1.13.4",
     "rxfire": "^6.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

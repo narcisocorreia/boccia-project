@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  gap: 3rem;
+  height: 80%;
+  overflow: hidden;
+
+  .glass {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1.6rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .playersList {
+    height: 100%;
+    width: 40%;
+
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    .player {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.5rem;
+
+      background: white;
+      border-radius: 0.5rem;
+      width: 90%;
+      height: 4rem;
+      border-bottom: solid 1px #ddd;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.5),
+        0 3px 14px 2px rgba(0, 0, 0, 0.05);
+
+      span {
+        text-transform: uppercase;
+        font-family: "Quicksand-SemiBold";
+        font-size: larger;
+      }
+      mat-icon {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .playersList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .player__container {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -8,8 +8,8 @@ import { PlayerListComponent } from './routes/player-list/player-list.component'
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'emailVerificationRoute', component: EmailVerificationComponent },
-  { path: 'analyses', component: AnalysesComponent },
-  { path: 'playerList', component: PlayerListComponent },
+  { path: 'playersList', component: AnalysesComponent },
+  { path: 'analyses', component: PlayerListComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,16 @@
 <div class="navbar">
   <img class="logo" src="assets/svg/logo.svg">
 
-  <h1 class="title">Boccia</h1>
+  <div class="text-container">
+    <ng-container *ngIf="currentUser; else elseTemplate">
+      <span class="title">Boccia</span>
+      <span class="title">Boccia</span>
+      <span class="title">Boccia</span>
+
+    </ng-container>
+  </div>
+
+
 
 
   <ng-container *ngIf="currentUser">
@@ -12,3 +21,6 @@
   </ng-container>
 
 </div>
+<ng-template #elseTemplate>
+  <span class="title">Boccia</span>
+</ng-template>
