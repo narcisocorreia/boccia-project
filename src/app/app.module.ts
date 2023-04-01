@@ -24,6 +24,8 @@ import { HotToastModule } from '@ngneat/hot-toast';
 import { EmailVerificationComponent } from './routes/email-verification/email-verification.component';
 
 import { KabanListComponent } from './routes/kaban-list/kaban-list.component';
+import { AnalysesComponent } from './routes/analyses/analyses.component';
+import { PlayerListComponent } from './routes/player-list/player-list.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { KabanListComponent } from './routes/kaban-list/kaban-list.component';
     LoginFormComponent,
     LoginComponent,
     EmailVerificationComponent,
+    AnalysesComponent,
+    PlayerListComponent,
   ],
   imports: [
     AppRoutingModule,

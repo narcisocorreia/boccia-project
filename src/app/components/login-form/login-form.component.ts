@@ -8,8 +8,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/services/authentication.service';
 import { HotToastService } from '@ngneat/hot-toast';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 
 export function passwordMatchValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -106,7 +106,7 @@ export class LoginFormComponent implements OnInit {
         if (!user.emailVerified) {
           this.router.navigate(['/emailVerificationRoute']);
         } else {
-          this.router.navigate(['/kabanListRoute']);
+          this.router.navigate(['/analyses']);
         }
       });
   }

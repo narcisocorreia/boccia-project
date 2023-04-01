@@ -18,7 +18,7 @@ export class EmailVerificationComponent implements OnInit {
   ngOnInit(): void {
     this.authService.currentUser$.subscribe((user) => {
       if (user?.emailVerified) {
-        this.router.navigate(['/kabanListRoute']);
+        this.router.navigate(['/analyses']);
       } else {
         this.authService.verifyEmail();
       }

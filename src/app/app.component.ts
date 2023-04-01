@@ -19,7 +19,7 @@ export class AppComponent {
     this.authService.currentUser$.subscribe((user) => {
       console.log(user);
       if (user !== null) {
-        if (user?.emailVerified) this.router.navigate(['/kabanListRoute']);
+        if (user?.emailVerified) this.router.navigate(['/analyses']);
         else this.router.navigate(['/emailVerificationRoute']);
       }
     });
